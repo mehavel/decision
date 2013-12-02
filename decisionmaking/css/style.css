@@ -22,8 +22,9 @@ a{
 	transition: all 0.2s linear;
 }
 a:hover{
-	color: #e5512d;
+	/*color: #e5512d;*/
 	background-color:#FFF;
+	border-bottom:2px solid #e5512d;
 }
 
 .clr {
@@ -142,10 +143,30 @@ ul.social li {
 		
 		
 /*---- Media Queries to make design responsive ----*/
+
+@media only screen and (max-width: 740px) and (min-width: 639px){
+	
+	body, .container {
+		overflow-x:hidden;}
+		
+	#headerImg{
+		width:300px;
+	}	
+
+	}
     
 @media only screen and (max-width: 640px) and (min-width: 320px){
 	body, .container {
 		overflow-x:hidden;}
+		
+	#headerImg{
+		width:50%;
+	}	
+	
+	#menu ul{
+    			font-size:1em;
+    		}
+		
 	.left-block {
 	float:left;
 	max-width:100%;
@@ -195,5 +216,7 @@ ul.social li {
 
 #headerImg{
 	float:left;
+	display:inline-block;
+	padding-left:50px;
 }
 
