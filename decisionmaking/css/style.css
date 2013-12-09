@@ -218,6 +218,23 @@ ul.social li {
 	.submit { margin-top:10px;}
 }
 
+
+#menu{
+	display: inline-block;
+	padding-top: 20px;
+	float: right;
+	padding-right: 50px;
+}	    	
+#menu ul{
+	text-transform: capitalize;
+	
+}
+#menu ul li{
+	list-style:none;
+	display:inline-block;
+	padding-right:5px;
+}
+
 #headerImg{
 	float:left;
 	display:inline-block;
@@ -254,4 +271,9 @@ ul.social li {
 	height: 400px;
 	width: 100%;
 	display:inline-block;
+}
+
+#process{
+	width:80%;
+	margin:0 auto;
 }
