@@ -24,7 +24,7 @@ a{
 	transition: all 0.2s linear;
 	padding:10px;
 }
-a:hover{
+#menu a:hover{
 	/*color: #e5512d;*/
 	background-color:#F5F5F5;
 	color:#1a92f3;
@@ -276,4 +276,63 @@ ul.social li {
 #process{
 	width:80%;
 	margin:0 auto;
+}
+
+#tabs{
+	padding-left:20px;
+}
+
+#tabs a{
+	height:43px;
+	width:240px;
+	position:relative;
+	font-size:16px;
+	float:left;
+	color:#444;
+	padding-top:22px;
+	padding-bottom:0px;
+}
+
+.step{
+	position:absolute;
+	right:45px;	
+}
+
+.firstOne{
+	background: url("../images/sprite.png");
+	background-position-x: -320px;
+	background-position-y: 71px;
+	z-index:4;
+}
+.secondOne{
+	background: url("../images/sprite.png");
+	background-position-x: -316px;
+	background-position-y: -9px;
+	margin-left: -32px;
+	z-index: 3;
+}
+.thirdOne{
+	z-index: 2;
+	background: url("../images/sprite.png");
+	background-position-x: -301px;
+	background-position-y: -9px;
+	margin-left: -30px;
+}
+.fourthOne{
+	z-index: 1;
+background: url("../images/sprite.png");
+background-position-x: 270px;
+background-position-y: -9px;
+margin-left: -17px;
+}
+
+a.secondOne:hover,a.thirdOne:hover,a.fourthOne:hover{
+	background-position-y: 71px;
+}
+
+.enterItem{
+	min-height: 400px;
+	background: #fff;
+	width: 95.5%;
+	overflow: auto;
 }
