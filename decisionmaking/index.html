@@ -58,14 +58,42 @@
 
 						<div id="tabs">
 							
-									<a href="#a" class="firstOne">Enter Choices</a>
+									<a href="#itemsDiv" class="firstOne">Enter Choices</a>
 								
-									<a href="#b" class="secondOne">Decision Factors</a>
+									<a href="#factorsdiv" class="secondOne">Decision Factors</a>
 								
 									<a href="#c" class="thirdOne">Rate Factor</a>
 								
 									<a href="#d" class="fourthOne">Rate Choices</a>
-							<div class="enterItem">
+							<div class="enterItem" id="itemsDiv">
+								<div id="items">
+										<span><input type="text" size="60"><span class="plusminus minus" onclick="removeAdd(this)">X</span></span>
+										<span><input type="text" size="60"><span class="plusminus minus" onclick="removeAdd(this)">X</span></span>
+										<div id="addcontrol" style="padding-top:30px;">
+											<span class="addPlus"><i class="fa fa-plus fa-1x"></i></span>
+											<span class="additem">Add Item</span>
+											<span class="done"><i class="fa fa-check fa-1x"></i></span>
+											<span class="doneitem">Done</span>
+										</div>
+								</div>
+								<div id="itemstext">
+									here
+								</div>
+							</div>
+							<div class="enterItem" id="factorsdiv" style="display:none;">
+								<div id="items">
+										<span><input type="text" size="60"><span class="plusminus minus" onclick="removeAdd(this)">X</span></span>
+										<span><input type="text" size="60"><span class="plusminus minus" onclick="removeAdd(this)">X</span></span>
+										<div id="addcontrol" style="padding-top:30px;">
+											<span class="addPlus"><i class="fa fa-plus fa-1x"></i></span>
+											<span class="additem">Add Factors</span>
+											<span class="done"><i class="fa fa-check fa-1x"></i></span>
+											<span class="doneitem">Done</span>
+										</div>
+								</div>
+								<div id="itemstext">
+									here
+								</div>
 							</div>
 						</div>
 
