@@ -7,6 +7,14 @@ $(document).ready(function(){
 	});
 	
 	$('.done,.doneitem').click(function(){
+		var inputElem = checklength();
+		if(inputElem.length >= 2){
+			$(inputElem).each(function(){
+				if($(this).val().length > 0){
+					console.log(1);
+				}
+			})
+		}
 		$('#itemsDiv').effect("slide",{direction:"left",mode:"hide"});
 		$('#factorsdiv').effect("slide",{direction:"right",mode:"show"});
 	});
@@ -36,4 +44,5 @@ function checklength(){
 	}else{
 		$('.plusminus').css('display','inline');
 	}
+	return count;
 }
